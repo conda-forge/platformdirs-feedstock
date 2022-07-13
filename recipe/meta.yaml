@@ -18,8 +18,11 @@ build:
 requirements:
   host:
     - pip
-    - hatchling
     - python >=3.7
+
+    # See the build-system.requires section of pyproject.toml
+    - hatchling >=0.22.0
+    - hatch-vcs
   run:
     - python >=3.7
 
