@@ -146,5 +146,6 @@ Feedstock Maintainers
 =====================
 
 * [@adament](https://github.com/adament/)
+* [@bollwyvl](https://github.com/bollwyvl/)
 * [@gaborbernat](https://github.com/gaborbernat/)
 
