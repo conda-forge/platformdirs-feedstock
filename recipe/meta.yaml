@@ -1,13 +1,12 @@
-{% set name = "platformdirs" %}
 {% set version = "2.6.0" %}
 
 
 package:
-  name: {{ name|lower }}
+  name: platformdirs
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/platformdirs-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/p/platformdirs/platformdirs-{{ version }}.tar.gz
   sha256: b46ffafa316e6b83b47489d240ce17173f123a9b9c83282141c3daf26ad9ac2e
 
 build:
@@ -21,8 +20,8 @@ requirements:
     - python >=3.7
 
     # See the build-system.requires section of pyproject.toml
-    - hatchling >=0.22.0
-    - hatch-vcs
+    - hatchling >=1.11.1
+    - hatch-vcs >=0.2
   run:
     - python >=3.7
 
@@ -39,9 +38,10 @@ about:
   summary: A small Python module for determining appropriate platform-specific dirs, e.g. a "user data dir".
   dev_url: https://github.com/platformdirs/platformdirs
   license: MIT
-  license_file: LICENSE.txt
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:
     - adament
     - gaborbernat
+    - bollwyvl
