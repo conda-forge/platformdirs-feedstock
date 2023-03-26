@@ -32,7 +32,7 @@ test:
     - mypy -p platformdirs
   requires:
     - pip
-    - mypy
+    - mypy --ignore-missing-imports
 
 about:
   home: https://github.com/platformdirs/platformdirs
