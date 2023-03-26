@@ -1,4 +1,4 @@
-{% set version = "3.1.1" %}
+{% set version = "3.2.0" %}
 
 package:
   name: platformdirs
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/platformdirs/platformdirs-{{ version }}.tar.gz
-  sha256: 024996549ee88ec1a9aa99ff7f8fc819bb59e2c3477b410d90a16d32d6e707aa
+  sha256: d5b638ca397f25f979350ff789db335903d7ea010ab28903f57b27e1b16c2b08
 
 build:
   number: 0
@@ -22,15 +22,17 @@ requirements:
     - hatch-vcs >=0.3
   run:
     - python >=3.7
-    - typing-extensions >=4.4
+    - typing-extensions >=4.5
 
 test:
   imports:
     - platformdirs
   commands:
     - pip check
+    - mypy -p platformdirs --ignore-missing-imports
   requires:
     - pip
+    - mypy
 
 about:
   home: https://github.com/platformdirs/platformdirs
