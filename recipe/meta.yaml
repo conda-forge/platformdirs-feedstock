@@ -29,8 +29,10 @@ test:
     - platformdirs
   commands:
     - pip check
+    - mypy -p platformdirs
   requires:
     - pip
+    - mypy
 
 about:
   home: https://github.com/platformdirs/platformdirs
