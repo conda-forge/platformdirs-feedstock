@@ -18,7 +18,7 @@ requirements:
     - pip
     - python >=3.7
     # See the build-system.requires section of pyproject.toml
-    - hatchling >=1.11.1
+    - hatchling >=1.14
     - hatch-vcs >=0.3
   run:
     - python >=3.7
