@@ -1,4 +1,4 @@
-{% set version = "3.4.0" %}
+{% set version = "3.5.0" %}
 
 package:
   name: platformdirs
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/platformdirs/platformdirs-{{ version }}.tar.gz
-  sha256: a5e1536e5ea4b1c238a1364da17ff2993d5bd28e15600c2c8224008aff6bbcad
+  sha256: 7954a68d0ba23558d753f73437c55f89027cf8f5108c19844d4b82e5af396335
 
 build:
   number: 0
