@@ -22,7 +22,6 @@ requirements:
     - hatch-vcs >=0.3
   run:
     - python >=3.8
-    - typing_extensions >=4.7.1
 
 test:
   imports:
