@@ -1,4 +1,4 @@
-{% set version = "4.1.0" %}
+{% set version = "4.2.0" %}
 
 package:
   name: platformdirs
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/platformdirs/platformdirs-{{ version }}.tar.gz
-  sha256: 906d548203468492d432bcb294d4bc2fff751bf84971fbb2c10918cc206ee420
+  sha256: ef0cc731df711022c174543cb70a9b5bd22e5a9337c8624ef2c2ceb8ddad8768
 
 build:
   number: 0
@@ -18,8 +18,8 @@ requirements:
     - pip
     - python >=3.8
     # See the build-system.requires section of pyproject.toml
-    - hatchling >=1.17.1
-    - hatch-vcs >=0.3
+    - hatchling >=1.18
+    - hatch-vcs >=0.4
   run:
     - python >=3.8
 
