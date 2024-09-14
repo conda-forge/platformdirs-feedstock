@@ -18,8 +18,8 @@ requirements:
     - pip
     - python >=3.8
     # See the build-system.requires section of pyproject.toml
-    - hatchling >=1.25
     - hatch-vcs >=0.4
+    - hatchling >=1.25
   run:
     - python >=3.8
 
@@ -34,9 +34,8 @@ test:
     - mypy
 
 about:
-  home: https://github.com/platformdirs/platformdirs
+  home: https://github.com/tox-dev/platformdirs
   summary: A small Python module for determining appropriate platform-specific dirs, e.g. a "user data dir".
-  dev_url: https://github.com/platformdirs/platformdirs
   license: MIT
   license_file: LICENSE
 
