@@ -3,13 +3,11 @@ About platformdirs-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/platformdirs-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/platformdirs/platformdirs
+Home: https://github.com/tox-dev/platformdirs
 
 Package license: MIT
 
 Summary: A small Python module for determining appropriate platform-specific dirs, e.g. a "user data dir".
-
-Development: https://github.com/platformdirs/platformdirs
 
 Current build status
 ====================
