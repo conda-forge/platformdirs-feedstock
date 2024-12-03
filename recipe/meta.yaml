@@ -5,23 +5,23 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/p/platformdirs/platformdirs-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/p/platformdirs/platformdirs-{{ version }}.tar.gz
   sha256: 357fb2acbc885b0419afd3ce3ed34564c13c9b95c89360cd9563f73aa5e2b907
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     # See the build-system.requires section of pyproject.toml
     - hatch-vcs >=0.4
     - hatchling >=1.25
   run:
-    - python >=3.8
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -32,6 +32,7 @@ test:
   requires:
     - pip
     - mypy
+    - python {{ python_min }}
 
 about:
   home: https://github.com/tox-dev/platformdirs
