@@ -1,4 +1,4 @@
-{% set version = "4.3.6" %}
+{% set version = "4.3.7" %}
 
 package:
   name: platformdirs
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/platformdirs/platformdirs-{{ version }}.tar.gz
-  sha256: 357fb2acbc885b0419afd3ce3ed34564c13c9b95c89360cd9563f73aa5e2b907
+  sha256: eb437d586b6a0986388f0d6f74aa0cde27b48d0e3d66843640bfb6bdcdb6e351
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
