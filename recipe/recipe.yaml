@@ -37,7 +37,7 @@ tests:
   - requirements:
       run:
         - mypy
-        - python ${{ python_min }}
+        - python ${{ python_min }}.*
     script:
       - mypy -p platformdirs --ignore-missing-imports
 
