@@ -20,7 +20,7 @@ build:
 
 requirements:
   host:
-    - hatch-vcs >=0.4
+    - hatch-vcs >=0.5
     - hatchling >=1.27
     - pip
     - python ${{ python_min }}.*
