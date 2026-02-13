@@ -3,6 +3,7 @@ schema_version: 1
 
 context:
   version: "4.7.0"
+  python_check_max: "3.14"
 
 package:
   name: platformdirs
@@ -32,20 +33,21 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}.*
-        - 3.13.*
+        - ${{ python_check_max }}.*
       imports: platformdirs
   - requirements:
       run:
         - mypy
         - python ${{ python_min }}.*
     script:
-      - mypy -p platformdirs --ignore-missing-imports
+      - mypy -p platformdirs --ignore-missing-imports --disable-error-code=safe-super ${{ "--exclude=windows" if unix }}
 
 about:
-  homepage: https://github.com/tox-dev/platformdirs
+  homepage: https://pypi.org/project/platformdirs
   license_file: LICENSE
   license: MIT
   summary: A small Python module for determining appropriate platform-specific dirs, e.g. a "user data dir".
+  repository: https://github.com/tox-dev/platformdirs
 
 extra:
   recipe-maintainers:
