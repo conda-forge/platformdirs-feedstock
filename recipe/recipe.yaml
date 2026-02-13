@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "4.5.1"
+  version: "4.7.0"
 
 package:
   name: platformdirs
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/platformdirs/platformdirs-${{ version }}.tar.gz
-  sha256: 61d5cdcc6065745cdd94f0f878977f8de9437be93de97c1c12f853c9c0cdcbda
+  sha256: fd1a5f8599c85d49b9ac7d6e450bc2f1aaf4a23f1fe86d09952fe20ad365cf36
 
 build:
   number: 0
