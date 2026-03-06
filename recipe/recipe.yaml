@@ -22,7 +22,7 @@ build:
 requirements:
   host:
     - hatch-vcs >=0.5
-    - hatchling >=1.27
+    - hatchling >=1.29
     - pip
     - python ${{ python_min }}.*
   run:
