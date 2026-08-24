@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "4.11.3"
+  version: "4.11.4"
   python_check_max: "3.14"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/platformdirs/platformdirs-${{ version }}.tar.gz
-  sha256: 66a73d38a849810252df809a3d8bcbda8e26f6c189920e7535ad608a48dbb5ab
+  sha256: f3373be828247211d0febabea97e238c3dfde8a60b3c90c32756fb52cb21556d
 
 build:
   number: 0
