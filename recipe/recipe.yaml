@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "4.11.13"
+  version: "4.11.14"
   python_check_max: "3.14"
 
 package:
@@ -10,14 +10,14 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/53/0e/7be2983c52622d6c0899300f760e31ba143355cedf1afcb3e65689d5ca85/platformdirs-${{ version }}.tar.gz
-  sha256: 6985eefdc2298693e4ce1fe124645524cb967428eb6384e0ce5b49767e7ea8ba
+  url: https://files.pythonhosted.org/packages/source/p/platformdirs/platformdirs-${{ version }}.tar.gz
+  sha256: 0e706ec0a73a4ec023d11496153a4b6607a672f4b5027c23c3aefa9c9288c523
 
 build:
   number: 0
   noarch: python
   script:
-    - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
+    - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check --check-build-dependencies
 
 requirements:
   host:
@@ -29,12 +29,17 @@ requirements:
     - python >=${{ python_min }}
 
 tests:
+  - package_contents:
+      strict: true
+      site_packages:
+        - platformdirs/**
+        - platformdirs-${{ version }}.dist-info/**
   - python:
+      imports: platformdirs
       pip_check: true
       python_version:
         - ${{ python_min }}.*
         - ${{ python_check_max }}.*
-      imports: platformdirs
   - requirements:
       run:
         - mypy
