@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "4.11.15"
+  version: "4.12.0"
   python_check_max: "3.14"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/p/platformdirs/platformdirs-${{ version }}.tar.gz
-  sha256: d7419e973b2b740d428200130f80c0e79304d1c71081001db911e15b26a3a6d4
+  sha256: 095be5c143382b1bee917c4f3e9987a0d8d6a582261f1d061ad0c403b7695b5b
 
 build:
   number: 0
