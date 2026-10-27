@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "4.13.5"
+  version: "4.13.6"
   python_check_max: "3.15"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/p/platformdirs/platformdirs-${{ version }}.tar.gz
-  sha256: 05831adf87d392760f4b5c3a0a95579ab5a10b18b9b9bd43680dcb47544788a0
+  sha256: 211d176e24674b5895dedf9021c262bcf9fad008a70610bfb147d4a8d6d8fe1b
 
 build:
   number: 0
@@ -21,6 +21,7 @@ build:
 
 requirements:
   host:
+    - hatch-fancy-pypi-readme >=25.1
     - hatch-vcs >=0.5
     - hatchling >=1.29
     - pip
